@@ -1,0 +1,103 @@
+/* About Section */
+.about-section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.about-background {
+    position: relative;
+    min-height: 60vh;
+    background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    margin-bottom: -20px;
+}
+
+.about-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(140, 8, 134, 0.8) 0%, rgba(212, 201, 255, 0.9) 100%);
+    z-index: 1;
+}
+
+/* Logo superior izquierda */
+.top-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contenido central */
+.content-card {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-card h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+}
+
+.content-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    font-weight: normal;
+}
+
+.content-card ul {
+    list-style: none;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.content-card li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.content-card li::before {
+    content: '•';
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+}
+
+/* CSS de barra de contacto eliminado - ya no es necesario */

@@ -1,0 +1,174 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0 15px;
+    }
+    
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .logo h1 {
+        font-size: 1.4rem;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+        color: #8C0886;
+    }
+    
+    .logo p {
+        font-size: 0.75rem;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+        color: #8C0886;
+    }
+    
+    .nav {
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .nav a {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-item {
+        max-width: 100%;
+    }
+
+    /* About section responsive */
+    .about-background {
+        background-attachment: scroll;
+    }
+    
+    .top-logo {
+        position: static;
+        margin: 1rem;
+        align-self: flex-start;
+    }
+    
+    .logo-text h3 {
+        font-size: 1rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.7rem;
+    }
+    
+    .content-card {
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }
+    
+    .content-card h1 {
+        font-size: 2.5rem;
+    }
+    
+    .content-card h2 {
+        font-size: 1.8rem;
+    }
+    
+    .content-card li {
+        font-size: 1rem;
+    }
+    
+    
+    .services-section h2 {
+        font-size: 2.5rem;
+    }
+    
+    .services-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-item {
+        padding: 1.5rem 1rem;
+    }
+    
+    .service-item h3 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header .container {
+        padding: 0 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .logo p {
+        font-size: 0.7rem;
+    }
+    
+    .nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .about-section h2,
+    .services-section h2 {
+        font-size: 2rem;
+    }
+    
+    .about-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 2rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-item h3 {
+        font-size: 1.1rem;
+    }
+}

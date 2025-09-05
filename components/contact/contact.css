@@ -1,0 +1,38 @@
+/* Contact Section */
+.contact-section {
+    background-color: #8C0886;
+    color: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,14 @@
+/* Footer */
+.footer {
+    background-color: #FFFFFF;
+    color: #8C0886;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+    color: #8C0886;
+}
