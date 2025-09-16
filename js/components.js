@@ -16,12 +16,66 @@ document.addEventListener('DOMContentLoaded', async function() {
     await loadComponent('about-component', 'components/about/about.html');
     await loadComponent('services-component', 'components/services/services.html');
     await loadComponent('contact-component', 'components/contact/contact.html');
+    initContactForm();
     await loadComponent('social-component', 'components/social/social.html');
     await loadComponent('footer-component', 'components/footer/footer.html');
     
     // Add click functionality to video items
     addVideoClickHandlers();
 });
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  const submitBtn = form.querySelector(".btn-enviar");
+  const btnSpinner = form.querySelector(".btn-spinner");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // Mostrar spinner y desactivar botón
+    submitBtn.disabled = true;
+    btnSpinner.style.display = "inline-block";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("send.php", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.ok) {
+        Swal.fire({
+          icon: "success",
+          title: "¡Mensaje enviado!",
+          text: result.msg,
+          confirmButtonText: "Aceptar",
+        });
+
+        form.reset();
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: result.msg,
+          confirmButtonText: "Cerrar",
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Ups...",
+        text: "Hubo un problema al enviar el mensaje. Intentalo más tarde.",
+      });
+    } finally {
+      submitBtn.disabled = false;
+      btnSpinner.style.display = "none";
+    }
+  });
+}
 
 // Function to add click handlers to video items
 function addVideoClickHandlers() {

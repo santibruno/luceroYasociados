@@ -14,8 +14,7 @@
       </div>
     </div>
 
-    <!-- Formulario -->
-    <form class="contact-form" method="POST" action="send.php">
+    <form class="contact-form" id="contact-form">
       <div class="form-group">
         <input type="text" name="nombre" placeholder="Tu nombre" required />
       </div>
@@ -26,6 +25,7 @@
         <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
       </div>
       <button type="submit" class="btn-enviar">Enviar</button>
+      <span class="btn-spinner" style="display: none;"></span>
     </form>
   </div>
 </section>

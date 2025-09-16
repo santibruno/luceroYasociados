@@ -1,7 +1,7 @@
 <?php
 // Configuración
 $destinatario = "santib1502@gmail.com";
-$asunto = "Nuevo mensaje desde el formulario de contacto";
+$asunto = "Mensaje desde el formulario de contacto 🧑‍⚖️‍📝";
 
 // Verificar que los datos hayan sido enviados por POST
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
