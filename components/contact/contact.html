@@ -1,15 +1,34 @@
 <section id="contacto" class="contact-section">
-    <div class="container">
-        <h2>Contacto</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <div class="contact-icon">📞</div>
-                <p>11 5567-8962</p>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">✉️</div>
-                <p>estudioranoyasociados@gmail.com</p>
-            </div>
-        </div>
+  <div class="container">
+    <h2>Contacto</h2>
+
+    <!-- Info -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-phone contact-icon"></i>
+        <p>11 3759-9619</p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope contact-icon"></i>
+        <p>victtorialucero@gmail.com</p>
+      </div>
     </div>
+
+    <!-- Formulario -->
+    <form class="contact-form" method="POST" action="send.php">
+      <div class="form-group">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Tu email" required />
+      </div>
+      <div class="form-group">
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      </div>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </div>
 </section>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />

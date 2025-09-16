@@ -26,35 +26,12 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
 }
 
-.logo-icon {
-    font-size: 2.2rem;
+.logo-image-services {
+    height: 120px;
+    width: auto;
 }
-
-.logo-text h1 {
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    margin-bottom: 0.1rem;
-    color: #8C0886;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.logo-text p {
-    font-size: 0.75rem;
-    opacity: 0.8;
-    letter-spacing: 0.5px;
-    color: #8C0886;
-    font-weight: normal;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .nav {
     display: flex;
     gap: 1.5rem;
@@ -75,5 +52,22 @@
     color: #FFFFFF;
     background-color: #8C0886;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem ;
+}
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav {
+       display: none;
+    }
+    .logo-image-services {
+        height: 100px;
+    }
+    .logo {
+        margin-bottom: 0;
+        display: block;
+    }
 }

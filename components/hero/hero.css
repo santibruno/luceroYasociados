@@ -1,45 +1,58 @@
 /* Hero Section */
 .hero {
-    background: #8C0886;
-    color: #FFFFFF;
-    padding: 80px 0;
-    text-align: center;
+  background: linear-gradient(135deg, #6a0572, #8c0886);
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    letter-spacing: 3px;
-    color: #FFFFFF;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-    color: #FFFFFF;
-    letter-spacing: 1px;
-    font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .hero-features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .feature-item {
-    background-color: transparent;
-    padding: 1.5rem;
-    max-width: 250px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+}
+
+.feature-item:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .feature-item h3 {
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    line-height: 1.2;
-    max-width: 200px;
-    margin: 0 auto;
+  font-size: 1.3rem; /* más grande */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  line-height: 1.5;
 }
